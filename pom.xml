@@ -102,17 +102,21 @@
 				</configuration>
 			</plugin>
 
-			<!-- For Tomcat -->
-			<!-- <plugin>
-				<groupId>org.apache.tomcat.maven</groupId>
-				<artifactId>tomcat7-maven-plugin</artifactId>
-				<version>2.2</version>
-				<configuration>
-					<path>/CounterWebApp</path>
-				</configuration>
-			</plugin> 
-                   -->
-
+<plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-war-plugin</artifactId>
+        <version>2.3</version>
+        <configuration>
+          <webResources>
+            <resource>
+              <!-- this is relative to the pom.xml directory -->
+              <directory>src/main/webapp</directory>
+              <filtering>true</filtering>
+            </resource>
+          </webResources>
+        </configuration>
+      </plugin>
+			
 		</plugins>
    <resources>
       <resource>
