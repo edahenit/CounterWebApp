@@ -77,7 +77,8 @@
 
 		<plugins>
 		    <!-- Eclipse project -->
-			<plugin>
+		<!--	
+                     <plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-eclipse-plugin</artifactId>
 				<version>2.9</version>
@@ -88,7 +89,8 @@
 					<!-- mvn eclipse:eclipse -Dwtpversion=2.0 -->
 					<wtpversion>2.0</wtpversion>
 				</configuration>
-			</plugin>
+			</plugin> 
+	-->
 			
 			<!-- Set JDK Compiler Level -->
 			<plugin>
@@ -102,14 +104,14 @@
 			</plugin>
 
 			<!-- For Tomcat -->
-			<plugin>
+			<!--- <plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
 					<path>/CounterWebApp</path>
 				</configuration>
-			</plugin>
+			</plugin> --->
 
 		</plugins>
    <resources>
